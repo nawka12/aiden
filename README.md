@@ -14,5 +14,5 @@ Please note that on the first run, `run.bat` will automatically close after the 
 
 ## Known bugs
 - The transcription will froze when `yt-dlp` starting to receive HTTP 403 Forbidden error. Please do `KeyboardInterrupt` (Ctrl + C) or close the batch window to stop Aiden, and run it again.
-- If you want to utilize your GPU, please install the GPU version of torch in the venv.
+- If you want to utilize your GPU, please install the GPU version of torch (in the venv for batch file user).
 - Window resize is not working properly yet.
