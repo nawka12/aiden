@@ -13,6 +13,7 @@ Or for you Windows user, simply use `run.bat` file. The batch file will install 
 Please note that on the first run, `run.bat` will automatically close after the installation finished. This is normal, you can open it again to run Aiden.
 ## FAQ
 Q: Why it's so slow?
+
 A: There are several factors. The first one is your internet connection. The second one is your PC specification, since Aiden utilize CPU, GPU, and RAM.
 ## Known bugs
 - The transcription will froze when `yt-dlp` starting to receive HTTP 403 Forbidden error. Please do `KeyboardInterrupt` (Ctrl + C) or close the batch window to stop Aiden, and run it again.
