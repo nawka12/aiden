@@ -15,7 +15,7 @@ ydl_opts = {
 }
 
 # Whisper model
-model = whisper.load_model("small")
+model = whisper.load_model("base")
 
 # Output directory for audio fragments
 output_directory = "audio_fragments"
