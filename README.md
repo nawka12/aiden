@@ -16,6 +16,6 @@ Q: Why it's so slow?
 
 A: There are several factors. The first one is your internet connection. The second one is your PC specification, since Aiden utilize CPU, GPU, and RAM.
 ## Known bugs
-- The transcription will froze when `yt-dlp` starting to receive HTTP 403 Forbidden error. Please do `KeyboardInterrupt` (Ctrl + C) or close the batch window to stop Aiden, and run it again.
+- The stop button will not stop the transcription immediately. It will processes the last chunk downloaded until it's transcribed, and then completely stop.
 - If you want to utilize your GPU, please install the GPU version of torch (in the venv for batch file user).
 - Window resize is not working properly yet.
