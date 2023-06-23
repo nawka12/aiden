@@ -23,6 +23,7 @@ os.makedirs(output_directory, exist_ok=True)
 # GUI window
 window = tk.Tk()
 window.title("Aiden YT-Stream Transcriber")
+window.resizable(False, False)
 
 # YouTube link label and entry
 youtube_link_label = tk.Label(window, text="YouTube Link:")
