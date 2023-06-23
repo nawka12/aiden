@@ -64,13 +64,13 @@ def process_audio_chunk(start_time, end_time, livestream_url):
 
             if process.returncode != 0:
                 error_message = process.stderr
-                window.after(0, lambda err=error_message: transcription_text.insert(tk.END, f"An error occurred: {err}\n\n"))
+                window.after(0, lambda err=error_message: print(f"An error occurred: {err}\n\n"))
 
                 # Check if the error contains "403 Forbidden" or "Failed to open segment"
                 if "403 Forbidden" in error_message:
                     # Stop the audio processing if HTTP 403 Forbidden or Failed to open segment error occurs
                     stop_audio_processing.set()
-                    window.after(0, lambda: transcription_text.insert(tk.END, "Transcription stopped due to YT-dlp error.\n\n"))
+                    window.after(0, lambda: print("Transcription stopped due to YT-dlp error.\n\n"))
                 return
 
             window.after(0, lambda: print(f"Audio fragment {start_time}-{end_time} downloaded and converted successfully!"))
