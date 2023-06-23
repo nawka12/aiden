@@ -18,4 +18,3 @@ A: There are several factors. The first one is your internet connection. The sec
 ## Known bugs
 - The stop button will not stop the transcription immediately. It will processes the last chunk downloaded until it's transcribed, and then completely stop.
 - If you want to utilize your GPU, please install the GPU version of torch (in the venv for batch file user).
-- Window resize is not working properly yet.
